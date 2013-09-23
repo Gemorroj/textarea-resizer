@@ -1,0 +1,14 @@
+{
+"name": "Textarea resizer",
+"developer": {"name" : "Gemorroj", "url" : "http://code.google.com/p/textarea-resizer/"},
+"description" : "When you hover over a textarea in the bottom right corner the icon appears, pulling it can resize the textarea.",
+"manifest_version" : 2,
+"version" : "2.12",
+"background" : {"page" : "options.html"},
+"icons" : {"128": "images/icon_18x18.png", "48": "images/icon_48x48.png"},
+"content_scripts": [
+{"js": ["oex_shim/operaextensions_injectedscript.js", "includes/textarea_resizer.js"], "matches": ["<all_urls>"], "include_globs": ["*"], "exclude_globs": [], "run_at": "document_start", "all_frames" : true}],
+"web_accessible_resources" : ["images/icon_18x18.png","images/icon_48x48.png","images/icon_64x64.png","includes/textarea_resizer.js","options.css","options.js","icon.png","LICENSE.TXT"],
+"permissions" : ["https://*/*", "storage", "http://*/*"],
+"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'unsafe-eval';"
+}
