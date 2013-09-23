@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="https://addons.opera.com/addons/extensions/details/textarea-resizer/" version="2.13dev">
+  <name xml:lang="en" short="Textarea resizer">Textarea resizer</name>
+
+  <icon src="images/icon_64x64.png" width="64" height="64" />
+  <icon src="images/icon_48x48.png" width="48" height="48" />
+  <icon src="images/icon_18x18.png" width="18" height="18" />
+
+  <content src="options.html" encoding="UTF-8" type="application/xhtml+xml" />
+
+  <preference name="pressModifierKey" value="0" readonly="false" />
+  <preference name="markerMinWidth" value="20" readonly="false" />
+  <preference name="markerMinHeight" value="20" readonly="false" />
+  <preference name="textarea" value="1" readonly="false" />
+  <preference name="iframe" value="0" readonly="false" />
+  <preference name="select" value="1" readonly="false" />
+  <preference name="img" value="0" readonly="false" />
+  <preference name="video" value="0" readonly="false" />
+  <preference name="canvas" value="0" readonly="false" />
+  <preference name="objectEmbed" value="0" readonly="false" />
+  <preference name="imgMinWidth" value="50" readonly="false" />
+  <preference name="imgMinHeight" value="50" readonly="false" />
+  <preference name="input" value="1" readonly="false" />
+  <preference name="inputText" value="1" readonly="false" />
+  <preference name="inputPassword" value="1" readonly="false" />
+  <preference name="inputFile" value="1" readonly="false" />
+  <preference name="inputEmail" value="1" readonly="false" />
+  <preference name="inputSearch" value="1" readonly="false" />
+  <preference name="inputTel" value="1" readonly="false" />
+  <preference name="inputUrl" value="1" readonly="false" />
+  <preference name="textareaDblclick" value="0" readonly="false" />
+  <preference name="iframeDblclick" value="0" readonly="false" />
+  <preference name="imgDblclick" value="0" readonly="false" />
+  <preference name="inputDblclick" value="0" readonly="false" />
+  <preference name="selectDblclick" value="0" readonly="false" />
+  <preference name="videoDblclick" value="0" readonly="false" />
+  <preference name="canvasDblclick" value="0" readonly="false" />
+  <preference name="objectEmbedDblclick" value="0" readonly="false" />
+
+  <license href="http://www.apache.org/licenses/LICENSE-2.0">Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</license>
+
+  <author href="http://code.google.com/p/textarea-resizer/">Gemorroj</author>
+
+  <description xml:lang="en">When you hover over a textarea in the bottom right corner the icon appears, pulling it can resize the textarea.
+
+The expansion allows you to resize some elements (textarea, input, select, img and other) on WEB pages.</description>
+  <description xml:lang="ru">При наведении курсора на текстовое поле в правом нижнем углу появляется значок, потянув за него можно изменить размер текстового поля.
+
+Расширение позволяет изменять размер некоторых элементов (textarea, input, select, img и другие) на WEB страницах.</description>
+</widget>

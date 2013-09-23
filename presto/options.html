@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="shortcut icon" href="icon.png" type="image/png" />
+        <title>Textarea resizer</title>
+        <link rel="stylesheet" type="text/css" href="options.css" />
+        <script type="text/javascript" src="options.js"></script>
+    </head>
+    <body>
+        <div class="wrapper"> 
+            <form action="#" onsubmit="return saveOptions();">
+                <div>
+                    <div id="response"></div>
+                    <ul>
+                        <li>
+                            <fieldset>
+                                <legend><input type="checkbox" id="select" /> <label for="select">select element</label></legend>
+                                <input type="checkbox" id="selectDblclick" /> <label for="selectDblclick">restore original size on dblclick</label><br />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend><input type="checkbox" id="textarea" /> <label for="textarea">textarea element</label></legend>
+                                <input type="checkbox" id="textareaDblclick" /> <label for="textareaDblclick">restore original size on dblclick</label><br />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend><input type="checkbox" id="iframe" /> <label for="iframe">iframe element</label></legend>
+                                <input type="checkbox" id="iframeDblclick" /> <label for="iframeDblclick">restore original size on dblclick</label><br />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend><input type="checkbox" id="objectEmbed" /> <label for="objectEmbed">object/embed element</label></legend>
+                                <input type="checkbox" id="objectEmbedDblclick" /> <label for="objectEmbedDblclick">restore original size on dblclick</label><br />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend><input type="checkbox" id="canvas" /> <label for="canvas">canvas element</label></legend>
+                                <input type="checkbox" id="canvasDblclick" /> <label for="canvasDblclick">restore original size on dblclick</label><br />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend><input type="checkbox" id="video" /> <label for="video">video element</label></legend>
+                                <input type="checkbox" id="videoDblclick" /> <label for="videoDblclick">restore original size on dblclick</label><br />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend><input type="checkbox" id="img" /> <label for="img">img element</label></legend>
+                                <input type="number" id="imgMinWidth" min="0" /> <label for="imgMinWidth">min width</label><br />
+                                <input type="number" id="imgMinHeight" min="0" /> <label for="imgMinHeight">min height</label><br />
+                                <input type="checkbox" id="imgDblclick" /> <label for="imgDblclick">restore original size on dblclick</label><br />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend><input type="checkbox" id="input" /> <label for="input">input element</label></legend>
+                                <input type="checkbox" id="inputText" /> <label for="inputText">text attribute</label><br />
+                                <input type="checkbox" id="inputPassword" /> <label for="inputPassword">password attribute</label><br />
+                                <input type="checkbox" id="inputFile" /> <label for="inputFile">file attribute</label><br />
+                                <input type="checkbox" id="inputEmail" /> <label for="inputEmail">email attribute</label><br />
+                                <input type="checkbox" id="inputSearch" /> <label for="inputSearch">search attribute</label><br />
+                                <input type="checkbox" id="inputTel" /> <label for="inputTel">tel attribute</label><br />
+                                <input type="checkbox" id="inputUrl" /> <label for="inputUrl">url attribute</label><br />
+                                <input type="checkbox" id="inputDblclick" /> <label for="inputDblclick">restore original size on dblclick</label><br />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend>The minimum size of elements to resize</legend>
+                                <input type="number" id="markerMinWidth" min="0" /> <label for="markerMinWidth">min width</label><br />
+                                <input type="number" id="markerMinHeight" min="0" /> <label for="markerMinHeight">min height</label><br />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend><label for="pressModifierKey">Modifier key</label></legend>
+                                <select id="pressModifierKey">
+                                    <option value="0">None</option>
+                                    <option value="1">SHIFT</option>
+                                    <option value="2">CTRL</option>
+                                    <option value="3">ALT</option>
+                                </select><br />
+                            </fieldset>
+                        </li>
+                    </ul>
+                    <input type="submit" value="Save" />
+                </div>
+            </form> 
+        </div>
+    </body>
+</html>

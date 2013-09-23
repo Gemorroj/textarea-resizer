@@ -1,0 +1,47 @@
+body {
+    background-color: #ffffff;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 500px;
+}
+.error {
+    color: #f00;
+    font-weight: bold;
+}
+.ok {
+    color: #0f0;
+    font-weight: bold;
+}
+form {
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
+    border-radius: 9px;
+    padding: 0 20px 40px 20px;
+}
+fieldset {
+    border-radius: 3px;
+    box-shadow: -3px 3px 3px #dddddd;
+}
+fieldset:hover {
+    box-shadow: -6px 6px 6px #dddddd;
+}
+label {
+    margin-left: 1px;
+}
+label:hover {
+    margin-left: 0;
+    border: 1px dotted #000077;
+}
+legend {
+    font-weight: bold;
+    color: #000077;
+}
+input[type="submit"] {
+    float: right;
+    width: 100px;
+    margin-right: 4px;
+}
+ul {
+    padding-left: 10px;
+}
