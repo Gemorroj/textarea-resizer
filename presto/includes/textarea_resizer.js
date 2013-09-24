@@ -145,11 +145,11 @@ window.addEventListener('DOMContentLoaded', function () {
                 h = e.clientY - offset.top + window.pageYOffset;
 
             if (w > config.markerMinWidth) {
-                current.style.width = w + 'px !important';
+                current.style.setProperty('width', w + 'px', 'important');
             }
 
             if (h > config.markerMinHeight && (tag === 'TEXTAREA' || tag === 'IMG' || tag === 'IFRAME' || tag === 'VIDEO' || tag === 'OBJECT' || tag === 'EMBED' || tag === 'CANVAS' || (tag === 'SELECT' && current.multiple === true))) {
-                current.style.height = h + 'px !important';
+                current.style.setProperty('height', h + 'px', 'important');
             }
 
             updatePosition();
@@ -230,8 +230,8 @@ window.addEventListener('DOMContentLoaded', function () {
         }
 
         m.addEventListener('mousedown', function (e) {
-            e.preventDefault();
             move = true;
+            e.preventDefault();
         }, false);
 
         m.addEventListener('mouseup', function () {
