@@ -43,5 +43,6 @@ input[type="submit"] {
     margin-right: 4px;
 }
 ul {
-    padding-left: 10px;
+    padding-left: 0;
+    list-style-type: none;
 }
